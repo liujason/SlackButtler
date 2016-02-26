@@ -4,7 +4,7 @@ var setup = function(controller){
   // "coffee end"
 
   controller.hears(['coffee'],'direct_message,mention', function(bot, msg){
-    bot.reply(message, 'What would you like in your coffee sir?'+JSON.stringify(message));
+    bot.reply(message, 'What would you like in your coffee sir?'+JSON.stringify(msg));
   });
 
 };
