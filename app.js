@@ -48,10 +48,13 @@ var os = require('os');
 var controller = Botkit.slackbot({
     debug: true,
 });
-
 var bot = controller.spawn({
     token: process.env.SLACK_TOKEN
 }).startRTM();
+
+require('./hears-example.js')(controller);
+require('./hears-coffee.js')(controller);
+
 
 //Need this web server, so heroku doesn't timeout at 60 seconds
 controller.setupWebserver(process.env.PORT||3000,function(err,webserver) {
