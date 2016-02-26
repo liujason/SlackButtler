@@ -3,7 +3,7 @@ var setup = function(controller){
   // "coffee start 5m" (collect coffee list and end in 5 minutes.)
   // "coffee end"
 
-  controller.hears(['coffee'],['ambient'], function(bot, message){
+  controller.hears(['coffee'],['ambient','direct_message','mention'], function(bot, message){
     bot.startConversation(message, askSize);
   });
   var askSize = function (response, convo){
