@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/liujason/SlackButtler/issues"
   },
-  "homepage": "https://github.com/liujason/SlackButtler#readme"
+  "homepage": "https://github.com/liujason/SlackButtler#readme",
+  "dependencies": {
+    "botkit": "0.0.7"
+  }
 }
