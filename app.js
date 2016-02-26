@@ -52,7 +52,7 @@ var bot = controller.spawn({
     token: process.env.SLACK_TOKEN
 }).startRTM();
 
-require('./hears-example.js')(controller);
+require('./hears-examples.js')(controller);
 require('./hears-coffee.js')(controller);
 
 
