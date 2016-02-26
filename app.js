@@ -140,7 +140,7 @@ controller.hears(['uptime','identify yourself','who are you','what is your name'
     bot.reply(message,':robot_face: I am a bot named <@' + bot.identity.name + '>. I have been running for ' + uptime + ' on ' + hostname + '.');
 
 });
-controller.setupWebserver(process.env.port,function(err,webserver) {
+controller.setupWebserver(process.env.PORT||3000,function(err,webserver) {
 
   controller.createWebhookEndpoints(controller.webserver);
 
